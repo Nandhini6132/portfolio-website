@@ -12,6 +12,7 @@ import img3 from '../src/images/img3.png'
 import img4 from '../src/images/img4.png'
 import img5 from '../src/images/img5.png'
 import Link from '@mui/material/Link';
+import Config from "./Config";
 
 const Projects2 = () => {
   const project = [
@@ -75,6 +76,7 @@ const Projects2 = () => {
 
   return (
     <>
+  
       <Typography 
         variant="h2"
         textAlign={"center"}

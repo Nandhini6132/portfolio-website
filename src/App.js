@@ -15,9 +15,9 @@ import EmailIcon from '@mui/icons-material/Email';
 
 function App() {
   const handleDownload = () => {
-    const cvUrl = 'https://drive.google.com/file/d/1labyczGetD8w1OSPIlkYB7HcQ2eEddbB/view?usp=sharing';
+    const cvUrl = 'https://drive.google.com/file/d/1JF3ZOr-Vd3Z8ZO8ieUfzAXERjuzhTe9c/view';
     try {
-      saveAs(cvUrl, 'Nandhini.pdf');
+      saveAs(cvUrl,'nandhini');
     } catch (error) {
       console.error('Error downloading file:', error);
       // Handle the error as needed (e.g., display an error message to the user)
