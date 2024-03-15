@@ -75,7 +75,7 @@ const Projects2 = () => {
   };
 
   return (
-    <>
+    <div data-aos="fade-up" className="container">
   
       <Typography 
         variant="h2"
@@ -118,7 +118,7 @@ const Projects2 = () => {
            </Card>
          ))}
        </Box>
-    </>
+    </div>
   );
 };
 

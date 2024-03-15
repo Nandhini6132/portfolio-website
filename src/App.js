@@ -12,8 +12,19 @@ import SpeedDialAction from '@mui/material/SpeedDialAction';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      offset: 200, // Offset (in pixels) from the top of the page for animations to trigger
+      duration: 800, // Duration of animation (in milliseconds)
+      easing: 'ease-in-out', // Easing type
+      delay: 100, // Delay between each animation (in milliseconds)
+    });
+  }, []);
+  
   const handleDownload = () => {
     const cvUrl = 'https://drive.google.com/file/d/1JF3ZOr-Vd3Z8ZO8ieUfzAXERjuzhTe9c/view';
     try {
@@ -105,7 +116,7 @@ function App() {
         </div>
       </div>
 
-      <About />
+   
       
     </div>
 

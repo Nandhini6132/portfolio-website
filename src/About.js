@@ -68,8 +68,9 @@ const About = () => {
   ];
 
   return (
-    <div className="container">
-      <Typography
+    <div className="container" >
+       <div  data-aos="fade-up">
+       <Typography
         variant="h2"
         textAlign={"center"}
         className="gradient-bg"
@@ -81,7 +82,7 @@ const About = () => {
       </Typography>
 
       <Box color={"white"} className="row  mt-5" style={{ margin: " 0 " }}>
-        <Box className="col-lg-6 col-12">
+        <Box  className="col-lg-6 col-12"  >
           <Typography
             variant="h5"
             color={"pink"}
@@ -164,7 +165,8 @@ const About = () => {
           ))}
         </Box>
       </Box>
-      <Projects2 />
+       </div>
+      {/* <Projects2 /> */}
     </div>
   );
 };

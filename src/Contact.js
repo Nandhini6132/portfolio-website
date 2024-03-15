@@ -1,11 +1,18 @@
 import React from "react";
 import { Box, Button, Typography } from "@mui/material";
 
+
 const Contact = () => {
+  // const handleSubmit=async(e)=>{
+  //   e.preventDefault()
+  //  await e.target.reset()  
+  // }       
   return (
+    
     <>
-     <div className="container pt-5">
-     <Typography
+     <div    className="container pt-5" >
+       <div>
+       <Typography
         variant="h2"
         textAlign={"center"}
         className="gradient-bg mt-5 mb-5 project"
@@ -60,6 +67,7 @@ const Contact = () => {
         <button className="btn btn-lg mb-5 btn-outline-light">Submit</button>
        </form>
       </Box>
+       </div>
      </div>
     </>
   );
