@@ -2,66 +2,75 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import Projects from "./Projects";
 import Projects2 from "./Projects2";
+import { BiLogoHtml5 } from "react-icons/bi";
+import { ImCss3 } from "react-icons/im";
+import { FaReact } from "react-icons/fa";
+import { FaBootstrap } from "react-icons/fa";
+import { SiRedux } from "react-icons/si";
+import { SiMui } from "react-icons/si";
+import { RiJavascriptFill } from "react-icons/ri";
+import { IoLogoFirebase } from "react-icons/io5";
+import { FaSass } from "react-icons/fa6";
 
 const About = () => {
   let skillSet = [
     {
       index: 1,
-      icon: "fa-brands fa-html5",
+      icon: <BiLogoHtml5/>,
       color: "#DD4B25",
       label: "HTML",
     },
     {
       index: 2,
-      icon: "fa-brands fa-react",
+      icon: <FaReact />,
       color: "#149ECA",
       label: "React",
     },
     {
       index: 3,
-      icon: "fa-brands fa-bootstrap",
+      icon: <FaBootstrap />,
       color: "#8011F5",
       label: "Bootstrap",
     },
     {
       index: 4,
-      icon: "fa-brands fa-css3-alt",
+      icon: <ImCss3 />,
       color: "#254BDF",
       label: "CSS",
     },
     {
       index: 5,
-      icon: "fa-brands fa-react",
+      icon: <SiRedux />,
       color: "#149ECA",
       label: "Tookit",
     },
     {
       index: 6,
-      icon: "fa-brands fa-m",
+      icon: <SiMui />,
       color: "#007BF7",
       label: "MUI",
     },
     {
       index: 7,
-      icon: "fa-brands fa-js",
+      icon: <RiJavascriptFill />,
       color: "#E8D44D",
       label: "JS",
     },
     {
       index: 8,
-      icon: "",
+      icon: <IoLogoFirebase />,
       color: "#E8D44D",
-      label: "X",
+      label: "Firebase",
     },
     {
       index: 9,
-      icon: "fa-brands fa-sass",
+      icon: <FaSass />,
       color: "#C76395",
       label: "SASS",
     },
     {
       index: 10,
-      icon: "fa-brands fa-sass",
+      icon: <FaSass />,
       color: "#C76395",
       label: "SASS",
     },
@@ -154,10 +163,11 @@ const About = () => {
               }}
             >
               {" "}
-              <i
+             <div style={{ fontSize: "50px", color: box.color }}>{box.icon}</div>
+              {/* <i
                 className={`fa-brands ${box.icon}`}
                 style={{ fontSize: "60px", color: box.color }}
-              ></i>
+              ></i> */}
               <span style={{ color: "#c7c015", fontWeight: "500" }}>
                 {box.label}
               </span>

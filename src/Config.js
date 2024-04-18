@@ -20,19 +20,35 @@ const Config= ({ enableParticles, children }) => {
     const particlesLoaded = (container) => {
         console.log(container);
     };
+    const containerStyle = {
+        position: 'absolute', 
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '300px', 
+        zIndex: -1, 
+    };
 
     return (
         <>{
-            <Particles
+            <Particles style={containerStyle}
             id="tsparticles"
             particlesLoaded={particlesLoaded}
             options={{
+                canvas:{
+                    size:{
+                        height:200
+                    },
+                },
                 background: {
                     color: {
                         value: "#00000",
                     },
+                    fullScreen:{
+                        enable:false
+                    }
                 },
-                fpsLimit: 500,
+                fpsLimit: 100,
                 interactivity: {
                     events: {
                         onClick: {
