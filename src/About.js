@@ -11,8 +11,10 @@ import { SiMui } from "react-icons/si";
 import { RiJavascriptFill } from "react-icons/ri";
 import { IoLogoFirebase } from "react-icons/io5";
 import { FaSass } from "react-icons/fa6";
+import { SiNextdotjs } from "react-icons/si";
 
-const About = () => {
+
+const About = ({ref}) => {
   let skillSet = [
     {
       index: 1,
@@ -70,20 +72,21 @@ const About = () => {
     },
     {
       index: 10,
-      icon: <FaSass />,
+      icon: <SiNextdotjs style={{color: "#595959"}}/>,
       color: "#C76395",
-      label: "SASS",
+      label: "Next JS",
     },
   ];
 
   return (
-    <div className="container" >
+    <div className="container about" id="about">
        <div  data-aos="fade-up">
+        {/* <div className="stroke">ABOUT</div> */}
        <Typography
         variant="h2"
         textAlign={"center"}
         className="gradient-bg"
-        letterSpacing={"12px"}
+        letterSpacing={"40px"}
         fontSize={"6.75rem"}
         color={"#0aa3e2"}
       >
