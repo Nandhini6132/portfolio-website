@@ -136,7 +136,7 @@ const Projects2 = () => {
           <Card
             sx={{
               width: "400px ",
-              // padding: "20px",
+              padding: "30px",
               marginBottom: "20px",
               background: "transparent",
               border: "none",
